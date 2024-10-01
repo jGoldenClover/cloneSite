@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre na sua conta da Epic Games</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/imagemFavIcon.png">
+    <link rel="stylesheet" href="./Assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="divLogin" > </div>
+    <section class="sectionLogin" id="corpoLogin" >
+        
+        <div class="imagemCentralizada">
+        <img src="./Assets/img/imagemÉpica.png" alt="" class="imagem">
+        </div>
+
+        <h4>Entrar</h4>
+
+        <section id="inform">
+        <div class="conteudo">
+            
+            <input type="text" placeholder="Endereço de E-mail" class="inputLogin"> 
+           
+            
+        </div>
+
+        <div class="conteudo">
+
+            
+            <input type="password" placeholder="Senha"required id="senha" class="inputLogin"> 
+            
+            <div>
+            <button class="btnShow" id="bnt-password" onclick="mostarSenha()"> <img src="./assets/img/verSenha.png" alt="" id="passwordStat"> </button>
+        </div>
+        </div >
+        </section>
+
+        <a href="https://www.epicgames.com/id/login/forgot-password?lang=pt-BR&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fpt-BR%2F&client_id=875a3b57d3a640a6b7f9b4e883463ab4" class="linkRedirecionamentoSenha"> Esqueceu a senha?</a>
+
+        <button class="botaoConfirmar" > <a href="https://store.epicgames.com/pt-BR/" class="entrar">Entrar</a> </button>
+
+        <div class="outrasOpcoesDeLogin">
+            <p class="gambiarra">__________________</p>
+            <p>  ou faça login com  </p>
+            <p class="gambiarra">__________________</p>
+            
+        </div>
+
+        <div class="opcoesLogin">
+
+            <a href="https://account.live.com/Consent/Update?mkt=PT-BR&uiflavor=web&id=290794&ru=https://login.live.com/oauth20_authorize.srf%3fclient_flight%3dcmmenbvo5zj%26uaid%3d6a282fbd8b4f4c5caf8c27d1766d1460%26client_id%3d82023151-c27d-4fb5-8551-10c10724a55e%26opid%3d621F58D5C8E510AE%26mkt%3dPT-BR%26opidt%3d1727813638" class="linkOpcaoLogin">  
+                <button class="opcao" id="xBox" > <img src="./assets/img/opcoesLogin/xBox.png"  class = 'imagemOpcao'> </button>
+                
+            </a>
+
+            <a href="https://my.account.sony.com/sonyacct/signin/?client_id=559bf940-f58b-41b4-9c4d-f60a5019f885&redirect_uri=https%3A%2F%2Fepicgames.com%2Fid%2Foauth-authorized&state=eyJpZCI6IjVjMGY0OTBhOWNmYjQ0YTlhZDZkNmMxZGE5MzVlOGQwIn0%3D&scope=openid+psn%3As2s&service_entity=urn%3Aservice-entity%3Apsn&force_verify=true&response_type=code&display=popup&ui=pr&cid=1b705c6a-9d14-495f-aabf-3fb8dcf480df&error=login_required&error_code=4165&no_captcha=true#/signin/input/id" class="linkOpcaoLogin">  
+                <button class="opcao" id="playstation" > <img src="./assets/img/opcoesLogin/playstation.png"  class = 'imagemOpcao'> </button>
+            </a>
+
+            <a href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D1f6a6a4806931686%26redirect_uri%3Dhttps%253A%252F%252Faccounts.epicgames.com%252FOAuthAuthorized%26scope%3Dopenid%2Buser.screenName%26state%3DeyJpZCI6ImM1MDhkY2QwOWQ0YTQ0ODRhZDU1NDU1NTI1MGJhYTZjIn0%253D%26nonce%3DEaEChxSw%26interacted%3D1&type=mixed" class="linkOpcaoLogin">  
+                <button class="opcao" id="nintendo"> <img src="./assets/img/opcoesLogin/nintendo.png"  class = 'imagemOpcao' id="nintendoImagens"> </button>
+            </a>
+
+            <a href="https://steamcommunity.com/openid/loginform/?goto=%2Fopenid%2Flogin%3Fopenid.claimed_id%3Dhttp%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select%26openid.identity%3Dhttp%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select%26openid.mode%3Dcheckid_setup%26openid.ns%3Dhttp%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%26openid.realm%3Dhttps%3A%2F%2Faccounts.epicgames.com%26openid.return_to%3Dhttps%253A%252F%252Faccounts.epicgames.com%252FOAuthAuthorized%3Fstate%3DeyJpZCI6IjkyNWRkNzNmNmJjMTRkOWQ5MzdmMWUyOTYwZWVmOWI5In0%253D%3Fopenid.claimed_id%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.identity%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.mode%3Dcheckid_setup%26openid.ns%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%26openid.realm%3Dhttps%253A%252F%252Faccounts.epicgames.com%26openid.return_to%3Dhttps%253A%252F%252Faccounts.epicgames.com%252FOAuthAuthorized%253Fstate%253DeyJpZCI6IjkyNWRkNzNmNmJjMTRkOWQ5MzdmMWUyOTYwZWVmOWI5In0%253D" class="linkOpcaoLogin">  
+                <button class="opcao" id="steam"> <img src="./assets/img/opcoesLogin/steam.png"  class = 'imagemOpcao' > </button>
+            </a>
+
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1132078350149238&kid_directed_site=0&app_id=1132078350149238&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D1132078350149238%26redirect_uri%3Dhttps%253A%252F%252Faccounts.epicgames.com%252FOAuthAuthorized%26state%3DeyJpZCI6ImNlNWRmZDdlNTkyZDRkODhiOTFkOGM3OGZiMmExMjk2In0%253D%26scope%3Demail%252Cpublic_profile%252Cuser_friends%26service_entity%3Dundefined%26force_verify%3Dtrue%26response_type%3Dcode%26display%3Dpopup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D2d6061ba-f1bf-4eda-9aeb-a1f01a651982%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.epicgames.com%2FOAuthAuthorized%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DeyJpZCI6ImNlNWRmZDdlNTkyZDRkODhiOTFkOGM3OGZiMmExMjk2In0%253D%23_%3D_&display=popup&locale=pt_BR&pl_dbl=0" class="linkOpcaoLogin">  
+                <button class="opcao" id="facebook"> <img src="./assets/img/opcoesLogin/facebook.png"  class = 'imagemOpcao' id="facebookImagens"> </button>
+            </a>
+
+            <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=81931294547-ict6llss8611g9nglndn2bnln48bo59d.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Faccounts.epicgames.com%2FOAuthAuthorized&state=eyJpZCI6IjUwMTNkN2VmYWUwZTRmOGY5ODI4ZWM2MzBiMTUyMjIwIn0%3D&scope=openid%20email%20profile&service_entity=undefined&force_verify=true&response_type=code&display=popup&nonce=ZrDYE4MC&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" class="linkOpcaoLogin">  
+                <button class="opcao" id="google"> <img src="./assets/img/opcoesLogin/google.png"  class = 'imagemOpcao' id="googleImagens"> </button>
+            </a>
+
+            <a href="https://appleid.apple.com/auth/authorize?client_id=com.epicgames.siwa&redirect_uri=https%3A%2F%2Fwww.epicgames.com%2Fid%2Fapi%2Fapple%2Foauth-authorized&response_type=code&scope=name%20email&response_mode=form_post&state=eyJpZCI6Ijc3NTU0MWRjZTQ5NTQ4YWU4NmVlNGE5ZDJjODUzNjgyIn0%3D&nonce=sKQo9eFX" class="linkOpcaoLogin">  
+                <button class="opcao" id="apple"> <img src="./assets/img/opcoesLogin/apple.png"  class = 'imagemOpcao' id="appleImagens"> </button> 
+            </a>
+
+            <a href="https://appleid.apple.com/auth/authorize?client_id=com.epicgames.siwa&redirect_uri=https%3A%2F%2Fwww.epicgames.com%2Fid%2Fapi%2Fapple%2Foauth-authorized&response_type=code&scope=name%20email&response_mode=form_post&state=eyJpZCI6Ijc3NTU0MWRjZTQ5NTQ4YWU4NmVlNGE5ZDJjODUzNjgyIn0%3D&nonce=sKQo9eFX" class="linkOpcaoLogin">  
+                <button class="opcao" id="lego"> <img src="./assets/img/opcoesLogin/lego.png"  class = 'imagemOpcao' >  </button> 
+            </a>
+
+        </div>
+
+
+        <a href="https://www.epicgames.com/id/register/date-of-birth?lang=pt-BR&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fpt-BR%2F&client_id=875a3b57d3a640a6b7f9b4e883463ab4" class="novaConta">Criar Conta</a>
+    </section>
+
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+</html>

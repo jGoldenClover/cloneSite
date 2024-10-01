@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body {
+    background: #131212 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter',sans-serif;
+
+}
+
+.sectionLogin {
+    margin-top: 15px;
+}
+
+h4{   
+    font-family: 'Inter',sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0px;
+    width: 100%;
+    max-width: 380px;
+}
+
+#corpoLogin {
+    background: rgb(32, 32, 32);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 55px 60px;
+    width: 470px;
+    height: 843px;
+}
+
+#inform {
+    margin-top: 20px;
+    border: none;
+}
+.imagem {
+    width: 50px;
+    height: 50px;
+    margin: 3px 3px 60px;
+    /* margin: 3px; */
+    
+}
+.imagemCentralizada { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.conteudo {
+    text-align: justify;
+    max-width: 360px;
+    max-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: rgb(32, 32, 32);
+    border: 1px #ffffff7e solid; 
+    display: flex;
+    flex-direction: row;
+    
+}
+.inputLogin {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    padding: 30px 20px 10px;
+}
+
+
+
+#passwordStat {
+    border-right: 1px #fff solid;
+    /* margin: 10px; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(32, 32, 32);
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    
+    
+}
+
+.btnShow {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+    /* margin-right: px; */
+    border: none;
+    border-radius: 5px;
+}
+
+#senha {
+    width: 318px;
+    border: none;
+}
+
+#passwordStat:hover {
+    background: rgb(49, 49, 49);
+    
+}
+
+
+
+.conteudo:hover {
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.entrar {
+    text-decoration: none;
+
+}
+
+.botaoConfirmar {
+    background-color: rgb(30, 96, 182);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: none;
+    align-items: inherit;
+    width: 100%;
+    max-width: 100%;
+    color:rgba(241, 241, 241, 0.72);
+    padding: 21px;
+    outline: none;
+    font-weight: 710;
+    font-size: 11.60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: inherit;
+    align-items: inherit;
+    margin: 30px auto 0px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.linkRedirecionamentoSenha {
+    font-family: inter;
+    font-size: 14px;
+    color: #fff;
+}
+
+.outrasOpcoesDeLogin {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.gambiarra {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.16);
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.novaConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.opcoesLogin{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opcao {
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 4px;    
+    
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagemOpcao {
+    
+    height: 70%;
+    padding: 5px 20px;
+}
+
+#xBox {
+    background-color: rgb(2, 125, 0);   
+    
+}
+
+#playstation {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#nintendo {
+    background-color: rgb(233, 0, 0);
+}
+#nintendoImagens {
+    width: 120px;
+}
+
+#steam {
+    background-color: #2664d3
+}
+
+#facebook {
+    background-color: rgb(255, 255, 255);
+}
+#facebookImagens {
+    width: 120px;
+    height: auto;
+}
+
+#google {
+    background-color: rgb(254, 253, 253);
+}
+#googleImagens {
+    width: 80px;
+    height: auto;
+}
+
+#apple {
+    background-color: rgb(0, 0, 0);
+}
+#appleImagens {
+    width: 100px;
+    height: auto;
+}
+
+#lego {
+    background-color: rgb(255, 212, 0);
+}
